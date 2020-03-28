@@ -1,0 +1,16 @@
+{
+  "name": "iteration2",
+  "version": "1.0.0",
+  "description": "DE102 assessment 3 iteration 2",
+  "main": "javascripttest.js",
+  "scripts": {
+    "test": "test2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "papaparse": "^5.1.1",
+    "prettier": "^2.0.2"
+  }
+}
