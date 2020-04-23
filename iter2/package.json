@@ -4,11 +4,12 @@
   "description": "DE102 assessment 3 iteration 2",
   "main": "javascripttest.js",
   "scripts": {
-    "test": "test2"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
     "fs": "0.0.1-security",
     "mocha": "^7.1.1",
     "papaparse": "^5.1.1",
