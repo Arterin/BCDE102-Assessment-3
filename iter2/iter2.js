@@ -35,15 +35,20 @@ papa.parse(file, {
         parties.forEach(forEachAddToParty);
         //stringify the JSON so we can save it to a file, otherwise it will look like "[object object]"
         var anElectorateStr = JSON.stringify(anElectorate, null, 4);
-        console.log(anElectorateStr);
+       //console.log(anElectorateStr);
 
         fs.writeFile('electorate.json', anElectorateStr, (err) => {
             if (err) throw err;
-            console.log('file created!');
+            //console.log('file created!');
         });
         }
 });
 
 function forEachAddToParty(party) {
     anElectorate.addParty(newPartyName=party[0], newVotes=party[1], newVotePercentage=party[02]);
+};
+
+module.exports = {
+    Party,
+    Electorate
 };
