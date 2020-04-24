@@ -15,7 +15,7 @@ class Electorate{
     constructor(newElectorateName) {
         this.electorateName = newElectorateName;
         this.partyCount = 0;
-        this.partyList = [];
+        this.partyList = [ ];
     }
 
     addParty(newPartyName, newVotes, new_votes_percentage) {

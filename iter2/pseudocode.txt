@@ -1,0 +1,15 @@
+import needed modules
+get readstream of csv file
+
+class Party has: partyName, votes, votePercentage
+class Electorate has: electorateName, partyCount, partyList
+    class Electorate has method: addParty
+        addParty takes in partyName, votes, votePercentage and then appends that to partyList and increments partyCount by 1
+
+make new Electorate object
+parse csv file
+pass each line of csv file to addParty and add it to the Electorate object
+stringify the Electorate object
+write the Electorate object to the electorate.json file
+
+export both classes 
