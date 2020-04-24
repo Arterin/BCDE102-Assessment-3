@@ -45,7 +45,7 @@ papa.parse(file, {
 });
 
 function forEachAddToParty(party) {
-    anElectorate.addParty(newPartyName=party[0], newVotes=party[1], newVotePercentage=party[02]);
+    anElectorate.addParty(newPartyName=party[0], newVotes=party[1], newVotePercentage=party[2]);
 };
 
 module.exports = {
