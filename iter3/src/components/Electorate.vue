@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="Electorate">
     <h1>My Election Data App</h1>
     <button v-on:click="getElectorateData">Get Electorate Data</button>
     <div>{{electorateDataList}}</div>
