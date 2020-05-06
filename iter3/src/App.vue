@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Electorate from './components/Electorate.vue'
+import Electorate from "./components/Electorate.vue";
 
 export default {
   name: "App",

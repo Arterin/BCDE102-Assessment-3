@@ -9,18 +9,12 @@ describe("Electorate", () => {
     expect(wrapper.find("button").isVisible()).to.be.true;
   });
 
-  it("on button click getElectorateData is called", () => {
-    const onClose = Electorate.getElectorateData
-    const wrapper = mount(Electorate, {
-      propsData: {
-        onClose
-      }});
-    wrapper.find('button').trigger('click');
-    expect(onClose).toHaveBeenCalled;
-  });
-
-  //it("when button is clicked, div displays electorate.json", () => {
-  //  
+  //it("on button click getElectorateData is called", () => {
+  //  wrapper.find("button").trigger("click");
+  //  expect(wrapper.emitted("getElectorateData")).to.have.length(1);
   //});
 
+  //it("when button is clicked, div displays electorate.json", () => {
+  //
+  //  });
 });

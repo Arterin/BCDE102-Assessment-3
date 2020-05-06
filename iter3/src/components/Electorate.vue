@@ -2,7 +2,7 @@
   <div class="Electorate">
     <h1>My Election Data App</h1>
     <button v-on:click="getElectorateData">Get Electorate Data</button>
-    <div>{{electorateDataList}}</div>
+    <div>{{ electorateDataList }}</div>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     getElectorateData() {
-      fetch("electorate.json")
+      fetch("/electorate.json")
         .then(response => response.json())
         .then(data => (this.electorateDataList = data));
     }
