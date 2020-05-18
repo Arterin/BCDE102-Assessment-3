@@ -1,0 +1,86 @@
+{
+    "electorateName": "Kelston",
+    "partyCount": 16,
+    "partyList": [
+        {
+            "partyName": "ACT New Zealand",
+            "votes": "112",
+            "votePercentage": "0.35"
+        },
+        {
+            "partyName": "Aotearoa Legalise Cannabis Party",
+            "votes": "106",
+            "votePercentage": "0.33"
+        },
+        {
+            "partyName": "Ban1080",
+            "votes": "7",
+            "votePercentage": "0.02"
+        },
+        {
+            "partyName": "Conservative",
+            "votes": "91",
+            "votePercentage": "0.29"
+        },
+        {
+            "partyName": "Democrats for Social Credit",
+            "votes": "1",
+            "votePercentage": "0.00"
+        },
+        {
+            "partyName": "Green Party",
+            "votes": "2133",
+            "votePercentage": "6.72"
+        },
+        {
+            "partyName": "Internet Party",
+            "votes": "9",
+            "votePercentage": "0.03"
+        },
+        {
+            "partyName": "Labour Party",
+            "votes": "15982",
+            "votePercentage": "50.37"
+        },
+        {
+            "partyName": "MANA",
+            "votes": "24",
+            "votePercentage": "0.08"
+        },
+        {
+            "partyName": "Māori Party",
+            "votes": "159",
+            "votePercentage": "0.50"
+        },
+        {
+            "partyName": "National Party",
+            "votes": "10456",
+            "votePercentage": "32.95"
+        },
+        {
+            "partyName": "New Zealand First Party",
+            "votes": "2087",
+            "votePercentage": "6.58"
+        },
+        {
+            "partyName": "New Zealand People's Party",
+            "votes": "45",
+            "votePercentage": "0.14"
+        },
+        {
+            "partyName": "NZ Outdoors Party",
+            "votes": "11",
+            "votePercentage": "0.03"
+        },
+        {
+            "partyName": "The Opportunities Party (TOP)",
+            "votes": "494",
+            "votePercentage": "1.56"
+        },
+        {
+            "partyName": "United Future",
+            "votes": "14",
+            "votePercentage": "0.04"
+        }
+    ]
+}
