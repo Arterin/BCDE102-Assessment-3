@@ -1,28 +1,29 @@
 <template>
   <div class='Electorate'>
     <h1>Kelston Electorate 2017</h1>
-    <button class="button button1" @click="getElectorateData(); showContainer();"><span>Get Electorate Data </span></button>
-    <div id="container"><pre id="data">{{ electorateDataList }}</pre></div>
+    <button class="button button1" @click="showContainer()"><span>Get Electorate Data</span></button>
+      <div id="container">
+        <div v-for="(party, i) in items.partyList" v-bind:key="i">
+          <h3 class="party-title">{{party.partyName}}</h3>
+          <p class="party-text">Votes: {{party.votes}}<br>Percentage: {{party.votePercentage}}</p>
+        </div>
+      </div>
   </div>
 </template>
 
 <script>
+import electorateDataList from './json/electorate.json'
+
 export default {
   name: 'Electorate',
   data () {
     return {
-      electorateDataList: null
+      items: electorateDataList
     }
   },
-  methods: {
-    getElectorateData () {
-      fetch('/electorate.json')
-        .then(response => response.json())
-        .then(data => (this.electorateDataList = data))
-    },
 
+  methods: {
     showContainer () {
-      // document.getElementById('container').style.display = 'block'
       document.getElementById('container').style.transform = 'translateX(0px)'
       document.getElementById('container').style.opacity = 1
     }
@@ -99,7 +100,7 @@ button:focus {
 #container {
  background-color: rgba(255, 255, 255, .15);
  backdrop-filter: blur(5px);
- width: 40%;
+ width: 33%;
  margin: 0 auto 80px;
  padding: 10px;
  border-radius: 10px;
