@@ -1,8 +1,8 @@
 <template>
   <div class='Electorate'>
     <h1>Kelston Electorate 2017</h1>
-    <button class="button button1" v-on:click="getElectorateData"><span>Get Electorate Data </span></button>
-    <div class="container">{{ electorateDataList }}</div>
+    <button class="button button1" @click="getElectorateData(); showContainer();"><span>Get Electorate Data </span></button>
+    <div id="container"><pre id="data">{{ electorateDataList }}</pre></div>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   name: 'Electorate',
   data () {
     return {
-      electorateDataList: 'Kelston electorate JSON data'
+      electorateDataList: null
     }
   },
   methods: {
@@ -19,6 +19,12 @@ export default {
       fetch('/electorate.json')
         .then(response => response.json())
         .then(data => (this.electorateDataList = data))
+    },
+
+    showContainer () {
+      // document.getElementById('container').style.display = 'block'
+      document.getElementById('container').style.transform = 'translateX(0px)'
+      document.getElementById('container').style.opacity = 1
     }
   }
 }
@@ -31,6 +37,7 @@ h1 {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* button */
 .button {
   background-color: #4CAF50; /* Green */
   color: white;
@@ -88,12 +95,23 @@ button:focus {
   outline:0;
 }
 
-.container {
+/* Frosted glass panel */
+#container {
  background-color: rgba(255, 255, 255, .15);
  backdrop-filter: blur(5px);
  width: 40%;
- margin: auto;
+ margin: 0 auto 80px;
  padding: 10px;
- border-radius: 5px;
+ border-radius: 10px;
+ display: block;
+ min-height: 300px;
+ opacity: 0;
+ transform: translateX(-50px);
+ transition: opacity 0.75s, transform 0.75s;
+}
+
+.pre {
+ text-align: center;
+ font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 </style>
